@@ -7,6 +7,7 @@ import wikipedia
 import os
 import sys
 import subprocess
+import random
 
 #What are the things while taking Query from user
 def takeCommand():
@@ -114,16 +115,6 @@ def Take_query():
             webbrowser.open("www.google.com")
             continue
 
-        elif "open my youtube channel" in query:
-            speak("Opening Your Youtube Channel")
-            webbrowser.open("https://www.youtube.com/channel/UCj-YgHAXSK2R62hMOytdMew")
-            continue
-
-        elif "open my discord server" in query:
-            speak("Opening Your discord server")
-            webbrowser.open("https://discord.com/channels/832490246649151499/832490247098859563")
-            continue
-
         elif "open classroom" in query:
             speak("Opening Google Classroom")
             webbrowser.open("https://classroom.google.com/u/1/h")
@@ -169,14 +160,9 @@ def Take_query():
             webbrowser.open("https://drive.google.com")
             continue
 
-        elif "play linus tech tips" in query:
-            speak("Playing Linus Tech Tips on youtube")
-            webbrowser.open("https://www.youtube.com/watch?v=27DE26j5n8w&list=RDCMUCXuqSBlHAE6Xw-yeJA0Tunw")
-            continue
-
-        elif "open spotify developer" in query:
-            speak("OPening Spotify Developers")
-            webbrowser.open("https://developer.spotify.com/dashboard/applications")
+        elif "open github" in query:
+            speak("Opening Github")
+            webbrowser.open("https://github.com")
             continue
 
         #Local application opening commands
@@ -230,33 +216,8 @@ def Take_query():
             subprocess.Popen('C:\Program Files (x86)\Sony\PS Remote Play\RemotePlay.exe')
             # os. system("C:\Program Files (x86)\Sony\PS Remote Play\RemotePlay.exe")
             continue
-        
-        elif "open fortnite" in query:
-            speak("Opening Fortnite")
-            subprocess.Popen("com.epicgames.launcher://apps/fn%3A4fe75bbc5a674f4f9b356b5c90567da5%3AFortnite?action=launch&silent=true")
-            continue
 
         #Only Reply Commands
-
-        elif "are you a human" in query:
-            speak("Yes It's True I'm not a human, i am a digital assistant.")
-            continue
-
-        elif "i am alone" in query:
-            speak("It's ok to be alone. If you need any kind of a help just tell me, i'm always there for you")
-            continue
-
-        elif "eat my poop" in query:
-            speak("I was about to say the same thing to you!")
-            continue
-        
-        elif "eat poop" in query:
-            speak("I was about to say the same thing to you!")
-            continue
-        
-        elif "introduce yourself to google" in query:
-            speak("Hey Google, I am Bagley")
-            continue
 
         elif "who made you" in query:
             speak("Technically i'm a character from Watch Dogs Legion, but i was brought to life by Mr. Hrithvik Bhardwaj. Thank you Mr. Hrithvik for bringing me to life.")
@@ -269,16 +230,13 @@ def Take_query():
             tellDay()
             continue
         
-        elif "who am i" in query:
-            speak("You Are A Human")
-            continue
-        
         elif "what is the time" in query:
             tellTime()
             continue
         
-        elif "how are you" in query:
-            speak("I'm Good, Thanks for asking.  How can i help you with??")
+        elif "how are you" in query or "what's up" in query or "what are you doing" in query:
+            stMsgs = ['Just doing my thing!', 'I am fine!', 'I am nice and full of energy']
+            speak(random.choice(stMsgs))
             continue
         
         elif "nothing" in query:
