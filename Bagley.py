@@ -151,6 +151,13 @@ def Take_query():
             continue
 
         #Local application opening commands
+# In order to open more applications through the program you need to specify it's path in the code. eg:
+           # elif "your command" in query:
+           # speak("What to say after listening the user")
+           # os.system("application name if downloaded from microsoft store")
+           # subprocess.Popen("Path of the application")
+           # continue
+
 
         elif "open spotify" in query:
             speak("Opening Spotify")
