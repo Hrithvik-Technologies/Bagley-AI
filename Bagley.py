@@ -68,21 +68,6 @@ def tellTime():
     
 #When Activated the program things to start with
 def Hello():
-    speak("System Booting up")
-    
-    speak("Connecting to Hrithvik Technologies Server's")
-    
-    speak("Success!")
-    
-    speak("Loading Bagley.py")
-    
-    speak("Loaded Successfully")
-    
-    speak("Connecting To The Internet")
-    
-    speak("Connection Established!")
-    
-    speak("I am Alive!")
     
     currentH = int(datetime.datetime.now().hour)
     if currentH >= 0 and currentH < 12:
@@ -218,10 +203,6 @@ def Take_query():
             continue
 
         #Only Reply Commands
-
-        elif "who made you" in query:
-            speak("Technically i'm a character from Watch Dogs Legion, but i was brought to life by Mr. Hrithvik Bhardwaj. Thank you Mr. Hrithvik for bringing me to life.")
-            continue
         
         elif "who are you" in query:
             speak("I am Bagley. Your Personalized Digital Assistant.")
@@ -256,7 +237,6 @@ def Take_query():
             exit()
         
         elif "exit" in query:
-            speak("Closing the Program Bagley.py")
             exit()
         
         elif "stop" in query:
