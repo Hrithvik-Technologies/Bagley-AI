@@ -158,7 +158,6 @@ def Take_query():
            # subprocess.Popen("Path of the application")
            # continue
 
-
         elif "open spotify" in query:
             speak("Opening Spotify")
             os.system("Spotify")
