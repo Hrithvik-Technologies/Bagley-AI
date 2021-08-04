@@ -156,7 +156,7 @@ def Take_query():
            # speak("What to say after listening the user")
            # os.system("application name if downloaded from microsoft store")
            # subprocess.Popen("Path of the application")
-           # continue
+           # continu
 
 
         elif "open spotify" in query:
