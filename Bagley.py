@@ -120,11 +120,6 @@ def Take_query():
             webbrowser.open("https://mail.google.cin/mail/u/0/#inbox")
             continue
 
-        elif "open github" in query:
-            speak("Opening Github")
-            webbrowser.open("https://github.com")
-            continue
-
         elif "open netflix" in query:
             speak("Opening Netflix")
             webbrowser.open("https://netflix.com")
