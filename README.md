@@ -1,3 +1,5 @@
+### Bagley AI 🤖!
+
 # To start using the ai you need to have the following installed in your system
 - 📌 Python3.9- I recommend using this version of python interpreter, as it work's smoothly with the ai
 
