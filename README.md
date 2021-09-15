@@ -11,4 +11,4 @@
 
 - 📌 wikipedia- this will help you get results from wikipedia directly. To download type this in cmd or terminal `pip install wikipedia`
 
-- 📌 Pyaudio- PyAudio provides Python bindings for PortAudio, the cross-platform audio I/O library. With PyAudio, you can easily use Python to play and record audio. To download it you need to go to this link and download the version compatible with your python compiler. (https://www.lfd.uci.edu/~gohlke/pythonlibs/)
+- 📌 Pyaudio= in order to make your ai listen you you are gonna need pyaudio from [here](https://www.lfd.uci.edu/~gohlke/pythonlibs/). After downloading the file from here open cmd and cd the directory with `cd /yourdirectory` and type `pip install yourfilename.whl` to install it!
