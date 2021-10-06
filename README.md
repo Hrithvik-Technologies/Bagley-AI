@@ -1,14 +1,39 @@
 ### Bagley AI 🤖!
 
-# To start using the ai you need to have the following installed in your system
-- 📌 Python3.9- I recommend using this version of python interpreter, as it work's smoothly with the ai
+[![version-1.2](https://img.shields.io/badge/version-1.2-green)](https://github.com/Hrithvik-Technologies/Bagley-AI/releases/tag/v1.2)
+[![MIT](https://img.shields.io/badge/license-MIT-blue)](https://img.shields.io/badge/license-MIT-blue)
+[![Python3](https://img.shields.io/badge/language-Python3-red)](https://img.shields.io/badge/language-Python3-red)
 
-- 📌 Pyttsx3- this is a text to speech module for the python ai. you can download with this code using your command prompt or terminal `pip install pyttsx3`
+Bagley is an **AI** 🤖 just like a google, alexa and siri 
+assistants!
 
-- 📌 speechrecognition- this will understand the speech user says to the ai. To download type this in cmd or terminial `pip install SpeechRecognition`
+[**Latest version**](https://github.com/Hrithvik-Technologies/Bagley-AI/releases/tag/v1.2)
 
-- 📌 datetime- this will get the time for the ai to tell. to download type this in cmd or terminal `pip install datetime`
+## Installation ⚙️
 
-- 📌 wikipedia- this will help you get results from wikipedia directly. To download type this in cmd or terminal `pip install wikipedia`
+1. Fork/Clone/Download this repo
 
-- 📌 Pyaudio= in order to make your ai listen you you are gonna need pyaudio from [here](https://www.lfd.uci.edu/~gohlke/pythonlibs/). After downloading the file from here open cmd and cd the directory with `cd /yourdirectory` and type `pip install yourfilename.whl` to install it!
+    `git clone https://github.com/Hrithvik-Technologies/Bagley-AI.git`
+
+2. Navigate to the directory
+
+    `cd Bagley-AI`
+
+3. run the Bagley.py script
+
+    `Bagley.py`
+    `python3 Bagley.py`
+
+4. Install the following libraries in your system
+    - 📌 pyttsx3 `pip install pyttsx3`!
+    - 📌 SpeechRecognition `pip install SpeechRecognition`!
+    - 📌 datetime `pip install datetime`!
+    - 📌 wikipedia `pip install wikipedia`!
+    - 📌 random `pip install ranodm`!
+    - 📌 Pyaudio= in order to make your ai listen you you are gonna need pyaudio from [here](https://www.lfd.uci.edu/~gohlke/pythonlibs/). After downloading the file from here open cmd and cd the directory with `cd /yourdirectory` and type `pip install yourfilename.whl` to install it!
+
+## Updating ⬇️
+
+To update Bagley with the stable release just pull the latest commit using Git.
+
+Download the latest version: `git pull origin main`
