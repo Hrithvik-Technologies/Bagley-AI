@@ -21,8 +21,8 @@ assistants!
 
 3. run the Bagley.py script
 
-    `Bagley.py`
-    `python3 Bagley.py`
+    * `Bagley.py`
+    * `python3 Bagley.py`
 
 4. Install the following libraries in your system
     - 📌 pyttsx3 `pip install pyttsx3`!
