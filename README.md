@@ -7,6 +7,10 @@
 Bagley is an **AI** 🤖 just like a google, alexa and siri 
 assistants!
 
+<p align="center">
+<img align="center" src=".img/carbon.png" width="900">
+</p>
+
 [**Latest version**](https://github.com/Hrithvik-Technologies/Bagley-AI/releases/tag/v1.2)
 
 ## Installation ⚙️
