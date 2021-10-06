@@ -4,8 +4,7 @@
 [![MIT](https://img.shields.io/badge/license-MIT-blue)](https://img.shields.io/badge/license-MIT-blue)
 [![Python3](https://img.shields.io/badge/language-Python3-red)](https://img.shields.io/badge/language-Python3-red)
 
-Bagley is an **AI** 🤖 just like a google, alexa and siri 
-assistants!
+Bagley is a **AI** 🤖 just like a google, alexa and siri!
 
 <p align="center">
 <img align="center" src=".img/carbon.png" width="900">
