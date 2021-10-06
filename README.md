@@ -1,4 +1,4 @@
-### Bagley AI 🤖!
+### Bagley AI 🤖
 
 [![version-1.2](https://img.shields.io/badge/version-1.2-green)](https://github.com/Hrithvik-Technologies/Bagley-AI/releases/tag/v1.2)
 [![MIT](https://img.shields.io/badge/license-MIT-blue)](https://img.shields.io/badge/license-MIT-blue)
