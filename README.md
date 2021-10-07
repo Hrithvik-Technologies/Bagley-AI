@@ -33,7 +33,7 @@ Bagley is a **AI** 🤖 just like a google, alexa and siri!
     - 📌 datetime `pip install datetime`!
     - 📌 wikipedia `pip install wikipedia`!
     - 📌 random `pip install ranodm`!
-    - 📌 Pyaudio= in order to make your ai listen you you are gonna need pyaudio from [here](https://www.lfd.uci.edu/~gohlke/pythonlibs/). After downloading the file from here open cmd and cd the directory with `cd /yourdirectory` and type `pip install yourfilename.whl` to install it!
+    - 📌 Pyaudio- in order to make your ai listen you you are gonna need pyaudio from [here](https://www.lfd.uci.edu/~gohlke/pythonlibs/). After downloading the file from here open cmd and cd the directory with `cd /yourdirectory` and type `pip install yourfilename.whl` to install it!
 
 ## Updating ⬇️
 
