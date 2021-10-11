@@ -1,8 +1,8 @@
 ### Bagley AI 🤖
 
 [![Version-1.2](https://img.shields.io/badge/Version-1.2-green)](https://github.com/Hrithvik-Technologies/Bagley-AI/releases/tag/v1.2)
-[![MIT](https://img.shields.io/badge/license-MIT-blue)](https://img.shields.io/badge/License-MIT-blue)
-[![Python3](https://img.shields.io/badge/language-Python3-red)](https://img.shields.io/badge/Language-Python3-red)
+[![MIT](https://img.shields.io/badge/License-MIT-blue)](https://img.shields.io/badge/License-MIT-blue)
+[![Python3](https://img.shields.io/badge/Language-Python3-red)](https://img.shields.io/badge/Language-Python3-red)
 
 Bagley is a **AI** 🤖 just like a google, alexa and siri!
 
