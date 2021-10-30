@@ -11,14 +11,19 @@
 #                                         /____/
 
 #Libraries needed for the program
-import pyttsx3
-import speech_recognition as sr
-import webbrowser
+import pyttsx3# text to speech library
+import speech_recognition as sr # Speech recognition library
 import datetime
 import wikipedia
+import webbrowser
 import os
-import sys
+import datetime
 import subprocess
+#from ecapture import ecapture as ec
+import wolframalpha
+import json
+import requests
+import time
 import random
 
 print("     __  __     _ __  __         _ __   ")
@@ -226,6 +231,40 @@ def Take_query():
             subprocess.Popen('C:\Program Files (x86)\Sony\PS Remote Play\RemotePlay.exe')
             # os. system("C:\Program Files (x86)\Sony\PS Remote Play\RemotePlay.exe")
             continue
+
+        # some questions asking thingy
+        elif 'ask' in query:
+            speak('I can answer to computational and geographical questions  and what question do you want to ask now')
+            question=takeCommand()
+            app_id="PH4QK2-Q5VX246A2U"
+            client = wolframalpha.Client('R2K75H-7ELALHR35X')
+            res = client.query(question)
+            answer = next(res.results).text
+            speak(answer)
+            print(answer)
+            continue
+
+        # Weather!!
+        elif "weather" in query:
+            api_key="ec48bfeed1780fdd1d4385b44377cd94"
+            base_url="https://api.openweathermap.org/data/2.5/weather?"
+            speak("what is the city name")
+            city_name=takeCommand()
+            complete_url=base_url+"appid="+api_key+"&q="+city_name
+            response = requests.get(complete_url)
+            x=response.json()
+        if x["cod"]!="404":
+            y=x["main"]
+            current_temperature = y["temp"]
+            current_humidiy = y["humidity"]
+            z = x["weather"]
+            weather_description = z[0]["description"]
+            speak(" Temperature in kelvin unit is " +
+                    str(current_temperature) +
+                    "\n humidity in percentage is " +
+                    str(current_humidiy) +
+                    "\n description  " +
+                    str(weather_description))
 
         #Only Reply Commands
         
