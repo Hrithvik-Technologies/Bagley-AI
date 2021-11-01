@@ -131,7 +131,7 @@ def Take_query():
 
         elif "open classroom" in query:
             speak("Opening Google Classroom")
-            webbrowser.open("https://classroom.google.com/u/1/h")
+            webbrowser.open("https://classroom.google.com")
             continue
 
         elif "open google meet" in query:
@@ -161,7 +161,7 @@ def Take_query():
 
         elif "open studio" in query:
             speak("Opening Youtube Studio")
-            webbrowser.open("https://studio.youtube.com/channel/UCj-YgHAXSK2R62hMOytdMew?c=UCj-YgHAXSK2R62hMOytdMew")
+            webbrowser.open("your youtube channel link here")
             continue
 
         elif "open drive" in query:
@@ -241,7 +241,6 @@ def Take_query():
             res = client.query(question)
             answer = next(res.results).text
             speak(answer)
-            print(answer)
             continue
 
         # Weather!!
@@ -253,18 +252,25 @@ def Take_query():
             complete_url=base_url+"appid="+api_key+"&q="+city_name
             response = requests.get(complete_url)
             x=response.json()
-        if x["cod"]!="404":
-            y=x["main"]
-            current_temperature = y["temp"]
-            current_humidiy = y["humidity"]
-            z = x["weather"]
-            weather_description = z[0]["description"]
-            speak(" Temperature in kelvin unit is " +
-                    str(current_temperature) +
-                    "\n humidity in percentage is " +
-                    str(current_humidiy) +
-                    "\n description  " +
-                    str(weather_description))
+            if x["cod"]!="404":
+                y=x["main"]
+                current_temperature = y["temp"]
+                current_humidiy = y["humidity"]
+                z = x["weather"]
+                weather_description = z[0]["description"]
+                speak(" Temperature in kelvin unit is " +
+                      str(current_temperature) +
+                      "\n humidity in percentage is " +
+                      str(current_humidiy) +
+                      "\n description is " +
+                      str(weather_description))
+
+        # webbrowser search command
+        elif "search" in query:
+            speak("Searching...")
+            query = query.replace("search", "")
+            webbrowser.open(query)
+            continue
 
         #Only Reply Commands
         
@@ -313,7 +319,7 @@ def Take_query():
             speak("by the way i'll be here if you need me. ")
             exit()
         
-        elif "search wikipedia" in query:
+        elif "wikipedia" in query:
             speak("Checking the wikipedia ")
             query = query.replace("wikipedia"," ")
             result = wikipedia.summary(query, sentences=20)
