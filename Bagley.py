@@ -152,7 +152,7 @@ def Take_query():
         elif "open netflix" in query:
             speak("Opening Netflix")
             webbrowser.open("https://netflix.com")
-            continue
+            continu
 
         elif "open prime video" in query:
             speak("Opening Prime Video")
