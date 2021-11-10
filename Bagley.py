@@ -182,10 +182,11 @@ def Take_query():
            # subprocess.Popen("Path of the application")
            # continue
 
-        elif "open spotify" in query:
-            speak("Opening Spotify")
-            os.system("Spotify")
-            continue
+        #elif "open spotify" in query:
+            #speak("Opening Spotify")
+            #subprocess.Popen("C:\Users\hrith\AppData\Roaming\Spotify\Spotify.exe")
+            #os.system("Spotify")
+            #continue
 
         elif "open virtualbox" in query:
             speak("Opening Virtual Box")
@@ -327,6 +328,18 @@ def Take_query():
             
         elif "introduce yourself" in query:
             speak("I am Bagley. Your Personalized Assistant")
+            
+        # shutdown the system!
+        elif "system off" in query:
+            speak('Turning the system off!')
+            os.system("shutdown /s /t 5")
+            continue
+        
+        # Log out command
+        elif "log off" in query or "sign out" in query:
+            speak("Ok , your pc will log off in 10 sec make sure you exit from all applications")
+            subprocess.call(["shutdown", "/l"])
+            exit()
 
 if __name__ == '__main__':
 	Take_query()
