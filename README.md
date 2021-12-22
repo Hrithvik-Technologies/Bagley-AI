@@ -1,7 +1,5 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=400&section=header&text=Bagley%20AI%20🤖&fontSize=57&reversal=true&desc=&animation=fadeIn&descSize=26&descAlignY=62&section=header)
 
-### Bagley AI 🤖
-
 [![Version-1.3](https://img.shields.io/badge/Version-1.3-green)](https://github.com/Hrithvik-Technologies/Bagley-AI/releases/tag/v1.3)
 [![MIT](https://img.shields.io/badge/License-MIT-blue)](https://img.shields.io/badge/License-MIT-blue)
 [![Python3](https://img.shields.io/badge/Language-Python3-red)](https://img.shields.io/badge/Language-Python3-red)
