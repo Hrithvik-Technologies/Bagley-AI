@@ -233,6 +233,12 @@ def Take_query():
             # os. system("C:\Program Files (x86)\Sony\PS Remote Play\RemotePlay.exe")
             continue
 
+        #Custom Commands
+        elif "open hrithvik's github page" in query:
+            speak("Opening Hrithvik's Github Page")
+            webbrowser.open("https://github.com/Retr0680")
+            continue
+
         # some questions asking thingy
         elif 'ask' in query:
             speak('I can answer to computational and geographical questions  and what question do you want to ask now')
