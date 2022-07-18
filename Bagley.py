@@ -26,17 +26,18 @@ import requests
 import time
 import random
 
-print("     __  __     _ __  __         _ __   ")
-print("    / / / /____(_) /_/ /_ _   __(_) /__ ")
-print("   / /_/ / ___/ / __/ __ \ | / / / //_/ ")
-print("  / __  / /  / / /_/ / / / |/ / / ,<    ")
-print(" /_/ /_/_/  /_/\__/_/ /_/|___/_/_/|_|   ")
-print("   ______          __                __            _           ")
-print("  /_  __/__  _____/ /_  ____  ____  / /___  ____ _(_)__  _____ ")
-print("   / / / _ \/ ___/ __ \/ __ \/ __ \/ / __ \/ __ `/ / _ \/ ___/ ")
-print("  / / /  __/ /__/ / / / / / / /_/ / / /_/ / /_/ / /  __(__  )  ")
-print(" /_/  \___/\___/_/ /_/_/ /_/\____/_/\____/\__, /_/\___/____/   ")
-print("                                         /____/ ")
+print("||\\          //\\          //||")
+print("|| \\        //  \\        // ||")
+print("||  \\      //    \\      //  ||")
+print("||   \\    //      \\    //   ||")
+print("||    \\  //        \\  //    ||")
+print("||     \\//          \\//     ||")
+print("||     //\\          //\\     ||")
+print("||    //  \\        //  \\    ||")
+print("||   //    \\      //    \\   ||")
+print("||  //      \\    //      \\  ||")
+print("|| //        \\  //        \\ ||")
+print("||//          \\//          \\||")
 
 #What are the things while taking Query from user
 def takeCommand():
@@ -68,7 +69,7 @@ def speak(audio):
 
     voices = engine.getProperty('voices')
 
-    engine.setProperty('voice', voices[0].id)
+    engine.setProperty('voice', voices[1].id)
 
     print('Bagley:' + audio)
     engine.say(audio)
@@ -146,7 +147,7 @@ def Take_query():
 
         elif "open gmail" in query:
             speak("Opening Google Mail")
-            webbrowser.open("https://mail.google.cin/mail/u/0/#inbox")
+            webbrowser.open("https://mail.google.com/mail/u/0/#inbox")
             continue
 
         elif "open netflix" in query:
