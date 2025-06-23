@@ -1,0 +1,14 @@
+requests
+bs4
+selenium
+selenium-wire==4.6.5
+mariadb
+pathlib==1.0.1
+iptools
+discord
+pyjwt
+tabulate
+rure==0.2.1
+jsbeautifier
+cryptography==38.0.4
+pyopenssl==22.0.0
