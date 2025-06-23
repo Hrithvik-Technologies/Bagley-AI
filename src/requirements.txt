@@ -12,3 +12,11 @@ rure==0.2.1
 jsbeautifier
 cryptography==38.0.4
 pyopenssl==22.0.0
+pyttsx3
+speech_recognition
+datetime
+Wikipedia
+webbrowser
+wolframalpha
+time
+random
